@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisWorld - 旅行記録アプリ</title>
+    <meta name="description" content="訪問した国・都市を地図上で記録・可視化する旅行記録アプリ">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 24px;
+            padding: 48px 40px;
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(255,111,0,0.3);
+        }
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 24px;
+        }
+        .description {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+        .features {
+            text-align: left;
+            margin-bottom: 32px;
+        }
+        .features h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        .features ul {
+            list-style: none;
+        }
+        .features li {
+            font-size: 14px;
+            color: #555;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .features li:last-child {
+            border-bottom: none;
+        }
+        .features li::before {
+            content: "✓ ";
+            color: #FF6F00;
+            font-weight: bold;
+        }
+        .store-button {
+            display: inline-block;
+            background: #FF6F00;
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            transition: background 0.3s;
+        }
+        .store-button:hover {
+            background: #E65100;
+        }
+        .store-button.disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .links {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #eee;
+        }
+        .links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 12px;
+        }
+        .links a:hover {
+            color: #FF6F00;
+        }
+        .contact {
+            margin-top: 16px;
+            font-size: 13px;
+            color: #888;
+        }
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-switch a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+        }
+        .lang-switch a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 520px) {
+            .container {
+                padding: 32px 24px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <a href="index_en.html">English</a>
+    </div>
+    
+    <div class="container">
+        <img src="icon.png" alt="VisWorld Icon" class="app-icon">
+        
+        <h1>VisWorld</h1>
+        <p class="subtitle">旅行記録アプリ</p>
+        
+        <p class="description">
+            訪問した国・都市を地図上で記録し、あなたの旅の足あとを可視化するアプリです。
+            211カ国に対応し、訪問した国がオレンジ色に染まっていく様子を楽しめます。
+        </p>
+        
+        <div class="features">
+            <h2>主な機能</h2>
+            <ul>
+                <li>訪問国の記録（211カ国対応）</li>
+                <li>訪問都市の記録</li>
+                <li>訪問履歴の管理（日付・複数回訪問対応）</li>
+                <li>3D地球儀での可視化</li>
+                <li>6大陸ごとの地域表示</li>
+                <li>ダークモード対応</li>
+                <li>Googleドライブバックアップ</li>
+            </ul>
+        </div>
+        
+        <a href="#" class="store-button disabled">近日公開予定</a>
+        
+        <div class="links">
+            <a href="PRIVACY_POLICY.html">プライバシーポリシー</a>
+        </div>
+        
+        <p class="contact">
+            お問い合わせ: visworld.contact@gmail.com
+        </p>
+    </div>
+</body>
+</html>
